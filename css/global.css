@@ -1,0 +1,8 @@
+.topbar {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Validação */
+.input-error {
+    border: 2px solid red !important;
+}

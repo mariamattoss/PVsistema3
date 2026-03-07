@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastrar Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+
+<body class="bg-light">
+
+    <header class="topbar navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <div class="navbar-brand logo">Cadastro de Cliente</div>
+            <div class="d-flex align-items-center user-info">
+                <span id="nomeVendedor" class="me-3"></span>
+                <button type="button" class="btn btn-secondary" onclick="location.href='home.html'">Voltar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-container container py-4">
+
+        <div class="row">
+            <div class="col-12">
+                <!-- ABAS -->
+                <nav class="nav nav-tabs nav-tabs-responsive mb-4 tabs flex-wrap">
+                    <button class="nav-link tab-btn active" data-tab="pessoais">Dados Pessoais</button>
+                    <button class="nav-link tab-btn" data-tab="contato">Contato & Endereço</button>
+                    <button class="nav-link tab-btn" data-tab="contrato">Contrato & Dependentes</button>
+                </nav>
+
+                <!-- GUIA 1 -->
+                <section id="pessoais" class="tab-content active">
+                    <div class="row g-2 g-md-3">
+                        <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Nome Completo *</label>
+                            <input id="nomeCompleto" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">CPF *</label>
+                            <input id="cpf" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Data de Nascimento *</label>
+                            <input type="date" id="dataNascimento" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Profissão *</label>
+                            <input id="profissao" class="form-control">
+                        </div>
+
+                        <div class="col-12 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Sexo *</label>
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="form-check">
+                                    <input type="radio" name="sexo" id="sexoF" value="Feminino"
+                                        class="form-check-input">
+                                    <label for="sexoF" class="form-check-label">Feminino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="sexo" id="sexoM" value="Masculino"
+                                        class="form-check-input">
+                                    <label for="sexoM" class="form-check-label">Masculino</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Vendedor Responsável</label>
+                            <input id="vendedorResponsavel" class="form-control" readonly>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- GUIA 2 -->
+                <section id="contato" class="tab-content">
+                    <div class="row g-2 g-md-3">
+                        <div class="col-12 col-sm-6 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Telefone *</label>
+                            <input id="telefone" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Rua *</label>
+                            <input id="rua" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Número *</label>
+                            <input id="numero" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">CEP *</label>
+                            <input id="cep" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-4 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Estado *</label>
+                            <select id="estado" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="PA">Pará</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-6 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Cidade *</label>
+                            <select id="cidade" class="form-select" disabled></select>
+                        </div>
+
+                        <div class="col-12 col-sm-6 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Bairro *</label>
+                            <select id="bairro" class="form-select" disabled></select>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- GUIA 3 -->
+                <section id="contrato" class="tab-content">
+                    <div class="row g-2 g-md-3">
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Número do Contrato</label>
+                            <input id="numeroContrato" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Tipo de Plano</label>
+                            <select id="tipoPlano" class="form-select">
+                                <option>Básico</option>
+                                <option>Premium</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Valor</label>
+                            <input id="valorPlano" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-md-3 form-group">
+                            <label class="form-label">Status</label>
+                            <select id="statusPlano" class="form-select">
+                                <option>Ativo</option>
+                                <option>Inativo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h3 class="mb-3">Dependentes</h3>
+
+                    <div class="row g-2 g-sm-3 mb-3 align-items-end">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <input id="depNome" class="form-control" placeholder="Nome do dependente">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <input id="depParentesco" class="form-control" placeholder="Parentesco">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <button type="button" class="btn btn-secondary w-100"
+                                onclick="adicionarDependente()">Adicionar</button>
+                        </div>
+                    </div>
+
+                    <ul id="listaDependentes" class="list-unstyled"></ul>
+                </section>
+
+                <div class="actions mt-4">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="salvarCliente()">Salvar
+                        Cliente</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/clientes.js"></script>
+</body>
+
+</html>

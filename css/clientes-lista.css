@@ -1,0 +1,58 @@
+/* estilos personalizados sem o bootstrap */
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ff8c00;
+}
+
+main.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+h1 {
+    border-left: 5px solid #ff8c00;
+    padding-left: 15px;
+}
+
+
+.table-hover tbody tr:hover {
+    background-color: #fff5eb;
+}
+
+/* Botões de ação */
+.btn-ver {
+    background-color: #ff8c00;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-ver:hover {
+    background-color: #e67e00;
+}
+
+.btn-excluir {
+    background-color: #fceaea;
+    color: #d93025;
+    border: 1px solid #f5c6cb;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-excluir:hover {
+    background-color: #d93025;
+    color: white;
+    border-color: #d93025;
+}

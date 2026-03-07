@@ -1,0 +1,49 @@
+/* Responsividade dos formulários */
+.page-container .form-control,
+.page-container .form-select {
+    min-width: 0;
+}
+
+.nav-tabs-responsive {
+    gap: 0.25rem;
+}
+
+.nav-tabs-responsive .tab-btn {
+    white-space: nowrap;
+}
+/* Responsividade */
+@media (max-width: 500px) {
+    .nav-tabs-responsive .tab-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+.tab-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #ff8c00 !important;
+    color: white !important;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Botão laranja padrão */
+.btn-warning {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+.btn-warning:hover {
+    background-color: #e67e00;
+    border-color: #e67e00;
+}

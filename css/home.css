@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    background-color: #b6b6b6;
+}
+
+.container-home {
+    padding-left: 1rem;
+}
+
+@media (min-width: 500px) {
+    .container-home {
+        padding-left: 1.5rem;
+    }
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff8c00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#nomeVendedor {
+    font-weight: 400;
+    font-weight: 600;
+    color: black;
+}
+
+/* Botão laranja da marca */
+.container .btn-warning {
+    color: white;
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+.container .btn-warning:hover {
+    background-color: #e67e00;
+    border-color: #e67e00;
+}
