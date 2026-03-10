@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Belém": [
         "Umarizal", "Condor", "Cremação", "Marambaia", "Jurunas",
         "Guamá", "Pedreira", "Telegrafo", "Terra Firme", "Marco", "Sacramenta", "Reduto", "Souza", "Nazaré", "Benguí",
-        "Fátima", "Batista Campos", "Cidade Velha"
+        "Fátima", "Batista Campos", "Cidade Velha", "agulha", "Campina de Icoaraci", "Cruzeiro", "Paracuri", "Ponta Grossa", "Águas Negras", "Maracacuera", "Parque Guarajá", "COHAB"
       ],
       "Ananindeua": [
         "Águas Lindas", "Icuí-guajará", "Distrito Industrial",
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Marituba": [
         "Centro", "Boa Vista", "Bairro Novo", "Almir Gabriel",
         "Mario Couto", "Beija Flor", "Uriboca", "Nova Marituba",
-        "Decouville", "Mirizal", "Bela Vista", "Nova União"
+        "Decouville", "Mirizal", "Bela Vista", "Nova União", "Jardim Imperial", "Che Guevara", "São Francisco", "Santa Lúcia"
       ]
     }
   };
